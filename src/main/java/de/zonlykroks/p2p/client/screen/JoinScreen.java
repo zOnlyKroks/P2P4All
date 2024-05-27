@@ -57,7 +57,7 @@ public class JoinScreen extends Screen {
             MinecraftClient.getInstance().setScreen(new SingleConnectionStateScreen(this, () -> {
                 MinecraftClient.getInstance().setScreen(new DirectConnectScreen(new MultiplayerScreen(this), b -> {
                     if(b) {
-                        ConnectScreen.connect(this, this.client, ServerAddress.parse(info.address), info, false);
+                        ConnectScreen.connect(this, this.client, ServerAddress.parse(info.address), info, false, null);
                     }
                 }, info));
             }));

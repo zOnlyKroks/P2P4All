@@ -1,5 +1,5 @@
 plugins {
-    id 'fabric-loom' version '1.5-SNAPSHOT'
+    id 'fabric-loom' version '1.6-SNAPSHOT'
     id 'maven-publish'
 }
 
@@ -29,7 +29,7 @@ dependencies {
     // Fabric API. This is technically optional, but you probably want it anyway.
     modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
-    include modImplementation("dev.isxander.yacl:yet-another-config-lib-fabric:${project.yacl_version}")
+    include modImplementation("dev.isxander:yet-another-config-lib:3.4.2+1.20.5-fabric")
 
     modRuntimeOnly modCompileOnly("com.terraformersmc:modmenu:${project.modmenu_version}")
 }
