@@ -29,7 +29,7 @@ dependencies {
     // Fabric API. This is technically optional, but you probably want it anyway.
     modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
-    include modImplementation("dev.isxander:yet-another-config-lib:3.4.2+1.20.5-fabric")
+    include modImplementation("dev.isxander:yet-another-config-lib:3.5.0+1.21-fabric")
 
     modRuntimeOnly modCompileOnly("com.terraformersmc:modmenu:${project.modmenu_version}")
 }

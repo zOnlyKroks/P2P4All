@@ -212,7 +212,7 @@ public class CreateScreen extends Screen {
         glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
         glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
         if(worldIcon == null || worldIcon.isEmpty()) {
-            context.drawTexture(new Identifier("textures/misc/unknown_server.png"), 10, 10 + textRenderer.fontHeight + 10, 0, 0, startX - 15, startX - 15);
+            context.drawTexture(Identifier.ofVanilla("textures/misc/unknown_server.png"), 10, 10 + textRenderer.fontHeight + 10, 0, 0, startX - 15, startX - 15);
         } else if(worldIcon != null){
             context.drawTexture(worldIcon.get().getTextureId(), 15, textRenderer.fontHeight + 25, 0, 0, startX - 25, startX - 25);
         }

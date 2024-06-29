@@ -40,24 +40,24 @@ public enum ConnectionProgress {
     }
 
     public static Identifier getCheckmark() {
-        return new Identifier("icon/checkmark");
+        return Identifier.ofVanilla("icon/checkmark");
     }
 
 
     public static Identifier getPingUnknown() {
-        return new Identifier("icon/ping_unknown");
+        return Identifier.ofVanilla("icon/ping_unknown");
     }
 
     public static Identifier getFirstPing() {
-        return new Identifier("icon/ping_1");
+        return Identifier.ofVanilla("icon/ping_1");
     }
 
     public static List<Identifier> getPings() {
-        final Identifier PING_1_ICON_TEXTURE = new Identifier("icon/ping_1");
-        final Identifier PING_2_ICON_TEXTURE = new Identifier("icon/ping_2");
-        final Identifier PING_3_ICON_TEXTURE = new Identifier("icon/ping_3");
-        final Identifier PING_4_ICON_TEXTURE = new Identifier("icon/ping_4");
-        final Identifier PING_5_ICON_TEXTURE = new Identifier("icon/ping_5");
+        final Identifier PING_1_ICON_TEXTURE = Identifier.ofVanilla("icon/ping_1");
+        final Identifier PING_2_ICON_TEXTURE = Identifier.ofVanilla("icon/ping_2");
+        final Identifier PING_3_ICON_TEXTURE = Identifier.ofVanilla("icon/ping_3");
+        final Identifier PING_4_ICON_TEXTURE = Identifier.ofVanilla("icon/ping_4");
+        final Identifier PING_5_ICON_TEXTURE = Identifier.ofVanilla("icon/ping_5");
         return List.of(PING_1_ICON_TEXTURE, PING_2_ICON_TEXTURE, PING_3_ICON_TEXTURE, PING_4_ICON_TEXTURE, PING_5_ICON_TEXTURE);
     }
 

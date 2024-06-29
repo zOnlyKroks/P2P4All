@@ -15,7 +15,7 @@ import java.util.concurrent.Executor;
 public class YACLImageReloadListenerFabric implements IdentifiableResourceReloadListener {
     @Override
     public Identifier getFabricId() {
-        return new Identifier("sounds", "image_reload_listener");
+        return Identifier.of("sounds", "image_reload_listener");
     }
 
     @Override

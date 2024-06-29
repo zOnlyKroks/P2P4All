@@ -55,7 +55,7 @@ public class P2PYACLConfig {
     public CustomGameModeEnum lanGameMode = CustomGameModeEnum.SURVIVAL;
 
     public static final ConfigClassHandler<P2PYACLConfig> HANDLER = ConfigClassHandler.createBuilder(P2PYACLConfig.class)
-            .id(new Identifier("p2p", "config"))
+            .id(Identifier.of("p2p", "config"))
             .serializer(config -> GsonConfigSerializerBuilder.create(config)
                     .setPath(CONFIG_PATH)
                     .build())
